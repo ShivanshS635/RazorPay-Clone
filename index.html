@@ -474,15 +474,15 @@
                             </ul>
         
                             <!--Button And Hyperlink-->
-                            <div class="flex flex-row items-center space-x-4 w-full">
+                            <div class="flex flex-col-reverse md:flex-row items-center space-x-4 w-full">
                                 <!--Button-->
-                                <button class="relative w-fill flex items-center justify-between space-x-8  text-white bg-lightBlue300 border rounded-md px-5 py-3 text-sm font-bold hover:bg-lightBlue500 transition-all duration-200">Sign Up
+                                <button class="relative w-full md:w-fit flex items-center justify-between space-x-8  text-white bg-lightBlue300 border rounded-md px-5 py-3 text-sm font-bold hover:bg-lightBlue500 transition-all duration-200">Sign Up
                                     <div class="w-12 h-[60px] bg-greenLight absolute right-4 skew-x-[20deg] z-1"></div>
                                     <svg class="relative py-1 z-20 right-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                                 </button>
         
                                 <!--Hyperlink-->
-                                <div class="flex flex-row justify-between items-center cursor-pointer group">
+                                <div class="flex self-start md:flex-row lg:flex-row justify-between items-center cursor-pointer group">
                                     <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue-50 transition-all duration-200">Know More</a>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-5 h-5 text-lightBlue500 group-hover:text-grayBlue-50 transition-all duration-200"><path d="m9 18 6-6-6-6"/></svg>
                                 </div>
@@ -495,7 +495,7 @@
 
                     <!--Card Box-->
 
-                    <div class="grid grid-cols-3 w-full gap-4 my-14">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 my-14">
                         <!--Box1-->
                         <div class="w-full min-h-[15rem] relative cursor-pointer group bg-[#181c2e]">
                             <img src="./Images/payment-link-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200 group-hover:bg-gradient-to-tr from-purple-900 to-blue-800...">
@@ -625,7 +625,7 @@
 
                     <!--Demo Card-->
 
-                    <div class="w-full flex flex-row justify-between items-center relative border rounded-md border-slate-700 mb-24 p-8 gap-y-6">
+                    <div class="w-full relative border rounded-md border-slate-700 mb-24 p-8 gap-y-6 hidden md:flex md:flex-col md:items-center lg:flex lg:flex-row lg:justify-between lg:items-center">
                         <!--Demo Text-->
                         <div>
                             <p class="text-white font-mullish text-xl">Check Out The Live Demo To Learn How RazorpayX Works. <span class="font-bold">No Sign-up Required!</span></p>
@@ -653,7 +653,7 @@
                 <img src="./Images/feature-section1-dottedrows.png" alt="" class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10" loading="lazy">
 
                 <!--Card Section-->
-                <div class="w-full grid grid-cols-3 grid-rows-2 gap-y-10 gap-x-4 relative z-10">
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-y-10 gap-x-4 relative z-10">
                     <!--Item 1-->
                     <div class="relative flex items-center z-0">
                         <h2 class=" text-deepBlueHead font-mullish font-extrabold text-4xl leading-[3.375rem]">
@@ -751,7 +751,7 @@
 
                 <!--Grid-->
 
-                <div class="grid grid-cols-4 gap-[2rem] mt-8">
+                <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2rem] mt-8">
 
                     <!--card 1-->
 
@@ -823,9 +823,9 @@
 
         <!--Join Razorpay Feature-->
         <section class="w-full relative bg-[#f5f8fe] pt-40 pb-12 -mt-[100px] z-[-100]">
-            <div class="w-10/12 mx-auto relative max-w-[1080px] flex items-center justify-between gap-6">
+            <div class="w-10/12 mx-auto relative max-w-[1080px] flex flex-col md:flex-row items-center justify-between gap-6">
                 <!-- Left Part -->
-                <div class="flex flex-col max-w-[calc(100%-500px)] justify-evenly items-start">
+                <div class="flex flex-col w-full md:max-w-[calc(100%-500px)] justify-evenly items-start">
     
                     <h2 class="font-mullish font-bold text-2xl text-deepBlueHead">Join the 50,00,000+ buisinesses using RazorPay</h2>
                     
@@ -844,7 +844,7 @@
                 <!-- Right Part -->
                 
 
-                <div class="relative h-[500px] w-[500px] overflow-y-hidden">
+                <div class="relative h-[500px] w-[500px] overflow-y-hidden mx-auto">
                     <div style="background: linear-gradient(180deg,#f4f8ff,#fff0);" class="absolute w-full h-[150px] top-0 z-[50]"></div>
 
                     <img src="./Images/comanies.png" class="absolute h-auto object-cover companiesList">
@@ -872,7 +872,7 @@
                 </button>
 
                 <!-- Middle Segment -->
-                <div class="flex flex-row max-w-[960px] items-center mx-auto my-20 justify-around">
+                <div class="flex flex-col xl:flex-row max-w-[960px] items-center mx-auto my-20 justify-around">
                     <!-- Left Image -->
                     <img src="./Images/testimonial.jpg" loading="lazy" class="h-[320px] w-[320px] rounded-xl">
 
@@ -911,7 +911,7 @@
         <!-- CTA -->
         <section class="cta-section bg-[url(/images/CTABg.svg)] w-full h-full bg-cover bg-no-repeat">
             <!-- Main Content Box -->
-            <div class="w-11/12 max-w-[1080p] min-h-[510px] mx-auto relative space-x-20 flex flex-row items-center justify-evenly ">
+            <div class="w-11/12 md:py-52 max-w-[1080p] min-h-[510px] mx-auto relative space-x-20 flex flex-row items-center justify-evenly ">
 
                 <!-- Left Part -->
                 <div class=" max-w-[600px] flex flex-col gap-5">
@@ -946,7 +946,7 @@
                 </div>
 
                 <!-- Right Part -->
-                <img src="./Images/ctaImg.svg" loading="lazy" class="w-[200px] h-[282px]">
+                <img src="./Images/ctaImg.svg" loading="lazy" class="w-[200px] h-[282px] hidden xl:block">
 
             </div>
 
